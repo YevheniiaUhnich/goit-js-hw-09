@@ -101,8 +101,7 @@ const images = [
     if (event.target.nodeName === 'IMG') {
       const source = event.target.dataset.source;
       openModal(source);
-    }
-  });
+    };
   
   images.forEach((image) => {
     const galleryItem = createGalleryItem(image);

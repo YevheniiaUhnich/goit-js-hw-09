@@ -22,4 +22,4 @@ function openModal(source) {
   
   gallery.addEventListener('click', (event) => {
     event.preventDefault();
-  
+  });
