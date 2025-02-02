@@ -1,9 +1,7 @@
 "use script"
 
-// Описаний в документації
 import SimpleLightbox from 'simplelightbox';
 
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
@@ -108,3 +106,8 @@ const images = [
     gallery.appendChild(galleryItem);
   });
   
+  const lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: "alt",
+    captionPosition: "bottom",
+    captionDelay: 250
+  });
